@@ -90,7 +90,7 @@
 		    let pre = document.querySelector('#msg pre');
 		    pre.textContent = '\n' + JSON.stringify(movies, '\t',2);
 		    
-		    localStorage.setItem('MijnWachtwoorden', JSON.stringify(movies) );
+		    sessionStorage.setItem('MijnWachtwoorden', JSON.stringify(movies) );
 		  }
 		  document.addEventListener('DOMContentLoaded', ()=>{
 		    document.getElementById('btn').addEventListener('click', addMovie);
